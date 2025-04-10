@@ -1,103 +1,114 @@
-import Image from "next/image";
+"use client"
+import Link from "next/link";
 
+import { useState, useEffect } from "react";
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const arr = ["H", "e", "l", "l", "o", " W", "o", "r", "l", "d"];
+  const FrontEnd = [
+    { id: 1, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", text: "HTML" },
+    { id: 2, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", text: "Vanila CSS" },
+    { id: 3, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", text: "Tailwind CSS" },
+    { id: 4, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", text: "JavaScript" },
+    { id: 5, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", text: "ReactJs" },
+    { id: 6, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", text: "NextJs" },
+    { id: 7, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", text: "TypeScript"},
+    { id: 8, image: "/pugg.png", text: "PUG" }
+  ]
+  const BackEnd = [
+    { id: 1, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", text: "NodeJs" },
+    { id: 2, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", text: "ExpressJs"},
+    { id: 3, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg", text: "MongoDb"},
+    { id: 4, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg", text: "FireBase"},
+  ]
+  const Programming = [
+    {id: 1, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg", text: "C prgramming"},
+    {id: 2, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg", text: "C++"},
+    {id: 3, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", text: "Java"},
+    {id: 4, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", text: "Python"}
+  ]
+  const tolls = [
+    {id: 1, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg", text: "Vs Code"},
+    {id: 2, image:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg", text: "Figma"},
+    {id: 3, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", text: "Git"},
+    {id: 4, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", text: "GitHub"}
+  ]
+  const [text, setText] = useState("");
+  const letteranimation = () => {
+    useEffect(() => {
+      let tempText = "";
+      arr.forEach((letter, index) => {
+        setTimeout(() => {
+          tempText += letter;
+          setText(tempText);
+        }, index * 400);
+      });
+    }, []);
+  }
+  letteranimation();
+  return (
+    <>
+      <div className="flex flex-col gap-2 sm:gap-8 bg-white sm:mr-40">
+        <div className="flex flex-col items-center text-3xl font-semibold bg-black text-white gap-5 p-10 sm:shadow-lg sm:shadow-gray-500" >
+          <div className="text-5xl">{text}</div>
+          <div>By</div>
+          <div>&lt;<span className="text-emerald-400">Chinmay Patil</span>  / &gt;</div>
+          <div className="text-lg text-gray-400">|Web Developer|</div>
+          <div className="w-full text-sm font-normal flex justify-center sm:justify-end"><a href="/resumechinmay.pdf" download="resumechinmay.pdf"><button className="border-2 border-white rounded-2xl p-2 cursor-pointer">Download Resume</button></a></div>
+          
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        
+
+
+        <div className="flex flex-col gap-8 pl-5 bg-white pt-8 sm:pt-0">
+          <div className="text-3xl font-bold text-amber-400">💡Skills And Tolls</div>
+
+          <div className="text-2xl font-extrabold text-emerald-600">Front End :</div>
+
+          <div className=" grid grid-cols-2 gap-10 sm:gap-5 sm:grid-cols-8 sm:grid">
+            {FrontEnd.map((skill) => (
+             
+                <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
+                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                </Link>
+            ))}
+            <Link href="/projects" className="smskill flex items-center w-35 h-40 text-black font-semibold sm:h-45"><div className="w-25 h-25 text-center text-pink-700 bg-lime-500 rounded-full pt-9 sm:pt-12 sm:w-30 sm:h-30">&lt;%=EJS%&gt;</div> Ejs</Link>
+          </div>
+
+          <div className="text-2xl font-extrabold text-emerald-600">Back End :</div>
+          <div className=" grid grid-cols-2 gap-10 sm:flex sm:gap-5">
+            {BackEnd.map((skill) => (
+             
+                <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
+                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                </Link>
+            ))}
+          </div>
+          <div className="text-2xl font-extrabold text-emerald-600">Programming</div>
+          <div className=" grid grid-cols-2 gap-10 sm:flex sm:gap-5">
+            {Programming.map((skill) => (
+             
+                <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
+                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                </Link>
+            ))}
+          </div>
+          <div className="text-2xl font-extrabold text-emerald-600">Tolls</div>
+          <div className=" grid grid-cols-2 gap-10 sm:flex sm:gap-5">
+            {tolls.map((skill) => (
+             
+                <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
+                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                </Link>
+            ))}
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </>
   );
 }
