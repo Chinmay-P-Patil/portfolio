@@ -34,8 +34,9 @@ export default function Home() {
     {id: 3, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", text: "Git"},
     {id: 4, image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", text: "GitHub"}
   ]
-  const [text, setText] = useState("");
-  const letteranimation = () => {
+  // const [text, setText] = useState("");
+  const Letteranimation = () => {
+    const [text, setText] = useState("");
     useEffect(() => {
       let tempText = "";
       arr.forEach((letter, index) => {
@@ -45,13 +46,13 @@ export default function Home() {
         }, index * 400);
       });
     }, []);
+    return <div className="text-5xl">{text}</div>
   }
-  letteranimation();
   return (
     <>
       <div className="flex flex-col gap-2 sm:gap-8 bg-white sm:mr-40">
         <div className="flex flex-col items-center text-3xl font-semibold bg-black text-white gap-5 p-10 sm:shadow-lg sm:shadow-gray-500" >
-          <div className="text-5xl">{text}</div>
+          <Letteranimation/>
           <div>By</div>
           <div>&lt;<span className="text-emerald-400">Chinmay Patil</span>  / &gt;</div>
           <div className="text-lg text-gray-400">|Web Developer|</div>
