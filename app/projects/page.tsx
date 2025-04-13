@@ -6,9 +6,9 @@ const Projects = () => {
         { id: 2, title: "Password Manager ", skills: "HTML, Tailwind CSS, RectJs, NextJs, Typescript, LocalStorage, MongoDB, NodeJs, ExpressJs ", about: "This project showcases my expertise in React, Next and TypeScript for frontend development, integrating seamlessly with a backend system using MongoDB, Node and express ", features: "It includes features like saving the password, deleting, editing ." },
 
     ]
-    const miniprojects = [
-        {id: 1, title: "Calculator", skills: "HTML, CSS, Javascript.", about: "", features: ""}
-    ]
+    // const miniprojects = [
+    //     {id: 1, title: "Calculator", skills: "HTML, CSS, Javascript.", about: "", features: ""}
+    // ]
     return (
         <>
             <div className="flex flex-col gap-5 sm:mr-40">
