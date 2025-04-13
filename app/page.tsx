@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link";
+import Image from "next/image";
 
 import { useState, useEffect } from "react";
 export default function Home() {
@@ -70,7 +71,7 @@ export default function Home() {
             {FrontEnd.map((skill) => (
              
                 <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
-                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                  <Image src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy" width={30} height={30}></Image>{skill.text}
                 </Link>
             ))}
             <Link href="/projects" className="smskill flex items-center w-35 h-40 text-black font-semibold sm:h-45"><div className="w-25 h-25 text-center text-pink-700 bg-lime-500 rounded-full pt-9 sm:pt-12 sm:w-30 sm:h-30">&lt;%=EJS%&gt;</div> Ejs</Link>
@@ -81,7 +82,7 @@ export default function Home() {
             {BackEnd.map((skill) => (
              
                 <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
-                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                  <Image src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy" width={30} height={30}></Image>{skill.text}
                 </Link>
             ))}
           </div>
@@ -90,7 +91,7 @@ export default function Home() {
             {Programming.map((skill) => (
              
                 <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
-                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                  <Image src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy" width={30} height={30}></Image>{skill.text}
                 </Link>
             ))}
           </div>
@@ -99,7 +100,8 @@ export default function Home() {
             {tolls.map((skill) => (
              
                 <Link href="/projects" key={skill.id} className="smskill flex items-center text-black font-semibold w-35 h-40 sm:h-45">
-                  <img src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy"/>{skill.text}
+                  <Image src={skill.image} alt="" className="w-25 h-25 sm:w-30 sm:h-30 " loading="lazy" width={30} height={30}></Image>
+                  {skill.text}
                 </Link>
             ))}
           </div>

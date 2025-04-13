@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 const Projects = () => {
     const majourprojects = [
@@ -28,17 +28,17 @@ const Projects = () => {
 
 
                                 <div className="fixed invisible sm:visible sm:static">
-                                    <img src="/social.svg" alt="" className="sm:h-full sm:w-full " loading="lazy"/>
+                                    <Image src="/social.svg" alt="" width={30} height={30} className="sm:h-full sm:w-full " loading="lazy"></Image>
                                 </div>
 
                                 <div className="flex flex-col gap-5 sm:border-l-3 sm:border-amber-400 sm:pl-2 w-full">
                                     <div className="flex items-center gap-2">
                                         <div className=" h-10 w-10 visible sm:invisible sm:fixed">
-                                            <img src="/social.svg" alt="" className="h-10 w-10" loading="lazy"/>
+                                        <Image src="/social.svg" alt="" width={30} height={30} className="h-10 w-10" loading="lazy"></Image>
                                         </div>
 
                                         <span className="text-lg sm:text-2xl font-bold border-l-3 border-amber-400 pl-2 sm:border-0 sm:pl-0">{project.title}</span><a href="https://social-media-6e8bb.web.app/" target="_blank" className="text-xl">🌐</a><a href="https://github.com/Chinmay-P-Patil/social-media">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="w-5 h-5" loading="lazy"/>
+                                        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" className="w-5 h-5" loading="lazy" height={30} width={30}></Image>
                                         </a>
                                     </div>
                                     <div className="overflow-y-scroll">
