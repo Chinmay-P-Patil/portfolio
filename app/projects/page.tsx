@@ -12,7 +12,7 @@ const Projects = () => {
     return (
         <>
             <div className="flex flex-col gap-5 sm:mr-40">
-                <div className="sm:fixed bg-[url(/projectsimg.jpg)] bg-no-repeat bg-[0px_0px] bg-cover h-50 visible opacity-70 flex items-center justify-around sm:invisible"><div className="text-amber-400 text-center font-extrabold text-5xl">PROJECTS</div></div>
+                <div className="bg-[url(/projectsimg.jpg)] bg-no-repeat bg-cover bg-center opacity-70 h-50 w-full flex justify-around sm:h-100 items-center sm:visible sm:relative"><div className="text-amber-400 text-center font-extrabold text-5xl">PROJECTS</div></div>
 
 
 

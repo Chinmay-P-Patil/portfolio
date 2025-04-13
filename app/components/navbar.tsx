@@ -28,7 +28,7 @@ const Navbar = () => {
                     <Link href="/experiance">EXPERIANCE</Link>
                 </div>
 
-                <div className="relative"> {/* Add relative positioning container */}
+                <div className="relative"> 
                     <button className="flex flex-col gap-1 border-2 border-gray-600 rounded-lg p-1 w-fit mr-3" onClick={handleToggle}>
                         <div className="border-b-2 border-gray-600 w-4"></div>
                         <div className="border-b-2 border-gray-600 w-4"></div>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </button>
 
                     {isOpen && (
-                        <div className="absolute flex flex-col gap-2 px-2 text-center top-full right-0 mt-2 bg-white shadow-lg rounded-b-lg z-50">
+                        <div className="absolute flex flex-col gap-2 px-2 text-center top-full right-0 mt-2 bg-white/80 shadow-lg rounded-b-lg z-50 w-50 ">
                             <Link href="/" onClick={handleToggle}>Home</Link>
                             <Link href="/connect" onClick={handleToggle}>Connect</Link>
                             <a href="https://www.linkedin.com/in/chinmay-patil-0533012b3/" target="_blank" onClick={handleToggle}>LinkedIn</a>
