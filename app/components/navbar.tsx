@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Link className="hover:underline hover:text-emerald-600" href="/">Home</Link>
                     <Link className="hover:underline hover:text-emerald-600" href="/connect">Connect</Link>
                     <Link className="hover:underline hover:text-emerald-600" href="/projects">Projects</Link>
-                    <Link className="hover:underline hover:text-emerald-600" href="/experiance">Experiance</Link>
+                    <Link className="hover:underline hover:text-emerald-600" href="/experiance">Experience</Link>
                     <a className="hover:underline hover:text-emerald-600" href="https://www.linkedin.com/in/chinmay-patil-0533012b3/" target="_blank">LinkedIn</a>
                     <a className="hover:underline hover:text-emerald-600" href="https://github.com/Chinmay-P-Patil" target="_blank">GitHub</a>
                     <a className="hover:underline hover:text-emerald-600" href="https://leetcode.com/u/o2Ntk5TxLi/" target="_blank">LeetCode</a>
@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className="sm:fixed flex justify-between shadow-lg py-2 text-emerald-500 font-bold items-center bg-white w-full sm:invisible">
                 <div className="flex justify-around w-full">
                     <Link href="/projects">PROJECTS</Link>
-                    <Link href="/experiance">EXPERIANCE</Link>
+                    <Link href="/experiance">EXPERIENCE</Link>
                 </div>
 
                 <div className="relative"> 

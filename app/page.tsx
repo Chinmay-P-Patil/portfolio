@@ -108,11 +108,23 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sm:fixed bg-[url(/projectsimg.jpg)] bg-no-repeat bg-[0px_0px] bg-cover h-50 visible opacity-70 flex items-center justify-around sm:invisible "><div className="text-amber-400 text-center font-extrabold text-5xl">PROJECTS</div></div>
 
-        <div className=" bg-[url(/connect.jpg)] bg-no-repeat bg-cover bg-center h-50 flex justify-around sm:h-100 sm:items-center sm:invisible sm:fixed">
-          <div className="text-emerald-700 font-extrabold text-5xl top-1 mt-10 sm:mt-0">CONNECT</div>
-        </div>
+        <Link href="/skills">
+        <div className="sm:fixed bg-[url(/skills.jpg)] bg-no-repeat bg-[0px_0px] bg-cover h-50 visible flex items-center justify-around sm:invisible "></div>
+        </Link>
+
+        <Link href="/projects"><div className="sm:fixed bg-[url(/projectsimg.jpg)] bg-no-repeat bg-[0px_0px] bg-cover h-50 visible opacity-70 flex items-center justify-around sm:invisible "><div className="text-amber-400 text-center font-extrabold text-5xl">PROJECTS</div></div></Link>
+        
+
+        <Link href="/experiance"><div className="sm:fixed bg-[url(/experiance.jpg)] bg-no-repeat bg-[0px_0px] bg-cover h-60 visible opacity-70 flex items-center justify-around sm:invisible "><div className="font-extrabold text-4xl opacity-100 pb-30">EXPERIENCE</div></div></Link>
+
+        <Link href="/connect"><div className=" bg-[url(/connect.jpg)] bg-no-repeat bg-cover bg-center h-50 flex justify-around sm:h-100 sm:items-center sm:invisible sm:fixed">
+          <div className="text-emerald-700 font-extrabold text-5xl top-1 mt-10">CONNECT</div>
+        </div></Link>
+
+        
+
+       
 
 
       </div>
