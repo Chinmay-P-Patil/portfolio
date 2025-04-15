@@ -19,6 +19,7 @@ const Navbar = () => {
                     <a className="hover:underline hover:text-emerald-600" href="https://www.linkedin.com/in/chinmay-patil-0533012b3/" target="_blank">LinkedIn</a>
                     <a className="hover:underline hover:text-emerald-600" href="https://github.com/Chinmay-P-Patil" target="_blank">GitHub</a>
                     <a className="hover:underline hover:text-emerald-600" href="https://leetcode.com/u/o2Ntk5TxLi/" target="_blank">LeetCode</a>
+                    <a href="/api/getPDF" className="border-2 rounded-2xl p-1 cursor-pointer" download>Resume</a>
                 </nav>
             </div>
 
