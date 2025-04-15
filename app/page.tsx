@@ -56,7 +56,7 @@ export default function Home() {
           <div>By</div>
           <div>&lt;<span className="text-emerald-400">Chinmay Patil</span>  / &gt;</div>
           <div className="text-lg text-gray-400">|Web Developer|</div>
-          <div className="w-full text-sm font-normal flex justify-center sm:justify-end"><a href="/resumechinmay.pdf" download="resumechinmay.pdf"><button className="border-2 border-white rounded-2xl p-2 cursor-pointer">Download Resume</button></a></div>
+          <div className="w-full text-sm font-normal flex justify-center sm:justify-end"><a href="/api/getPDF" className="border-2 border-white rounded-2xl p-2 cursor-pointer" download>Download Resume</a></div>
 
         </div>
 
@@ -118,7 +118,7 @@ export default function Home() {
 
         <Link href="/experiance"><div className="sm:fixed bg-[url(/experiance.jpg)] bg-no-repeat bg-[0px_0px] bg-cover h-60 visible opacity-70 flex items-center justify-around sm:invisible "><div className="font-extrabold text-4xl opacity-100 pb-30">EXPERIENCE</div></div></Link>
 
-        <Link href="/connect"><div className=" bg-[url(/connect.jpg)] bg-no-repeat bg-cover bg-center h-50 flex justify-around sm:h-100 sm:items-center sm:invisible sm:fixed">
+        <Link href="/connect"><div className=" bg-[url(/connect.jpg)] bg-no-repeat bg-cover bg-center h-50 flex justify-around sm:invisible sm:fixed">
           <div className="text-emerald-700 font-extrabold text-5xl top-1 mt-10">CONNECT</div>
         </div></Link>
 
