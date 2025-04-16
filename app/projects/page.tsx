@@ -9,13 +9,13 @@ const Projects = () => {
     const miniprojects = [
         {id: 1, title: "Weather Forecast Web App", hostlink:"https://majour-project.vercel.app/", gitlink:"https://github.com/Chinmay-P-Patil/majour-project", skills: "HTML, CSS, Javascript(fetch)", about: "This is weather web app which fetches data from weathe api and displays the data.", features: "This project includes features like getting the crrent location weather and also three days ahead weather forecast."},
 
-        {id: 2, title: "Calculator", gitlink:"https://github.com/Chinmay-P-Patil/majour-project", skills: "HTML, CSS, Javascript(fetch)", about: "This is a basic calculator highlighting the javascript skill.", features: "This calculator consist of all basic operations like addition, subtraction, multiplication and division. Making sure it follows the BODMAS rule."},
+        {id: 2, title: "Calculator", gitlink:"https://helloworldbychinmay.vercel.app/", skills: "HTML, CSS, Javascript(fetch)", about: "This is a basic calculator highlighting the javascript skill.", features: "This calculator consist of all basic operations like addition, subtraction, multiplication and division. Making sure it follows the BODMAS rule."},
 
-        {id: 3, title: "Netflix Clone (UI)", gitlink:"https://github.com/Chinmay-P-Patil/majour-project", skills: "HTML, CSS", about: "This a clone of netflix showcasing my Tailwind CSS skills.", features: "This project is responcive and has perfect UI."},
+        {id: 3, title: "Netflix Clone (UI)", gitlink:"https://helloworldbychinmay.vercel.app/", skills: "HTML, CSS", about: "This a clone of netflix showcasing my Tailwind CSS skills.", features: "This project is responcive and has perfect UI."},
 
-        {id: 4, title: "To-Do List", gitlink:"https://github.com/Chinmay-P-Patil/majour-project", skills: "React.js", about: "This a to-do list which allow user to manage there daily task. It make use of hooks in react and state management", features: "It has features like adding task and deleting."},
-        {id: 5, title: "Dice Roll", gitlink:"https://github.com/Chinmay-P-Patil/majour-project", skills: "React.js, CSS", about: "This is normal game highlighting javascript skill.", features: "This project is a simple dice roll game where user can roll the dice and get the random number."},
-        {id: 6, title: "Rock Paper Scissors ", gitlink:"https://github.com/Chinmay-P-Patil/majour-project", skills: "Javascript, HTML", about: "This is game of rock paper scissors.", features: "This project is a simple game where user can play the game with computer."},
+        {id: 4, title: "To-Do List", gitlink:"https://helloworldbychinmay.vercel.app/", skills: "React.js", about: "This a to-do list which allow user to manage there daily task. It make use of hooks in react and state management", features: "It has features like adding task and deleting."},
+        {id: 5, title: "Dice Roll", gitlink:"https://helloworldbychinmay.vercel.app/", skills: "React.js, CSS", about: "This is normal game highlighting javascript skill.", features: "This project is a simple dice roll game where user can roll the dice and get the random number."},
+        {id: 6, title: "Rock Paper Scissors ", gitlink:"https://helloworldbychinmay.vercel.app/", skills: "Javascript, HTML", about: "This is game of rock paper scissors.", features: "This project is a simple game where user can play the game with computer."},
     ]
     return (
         <>
