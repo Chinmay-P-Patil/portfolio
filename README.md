@@ -17,7 +17,7 @@ Welcome to my personal portfolio! This is a showcase of my skills, projects, and
 To run the project locally:
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/Chinmay-P-Patil/portfolio
 cd portfolio
 npm install
 npm start
